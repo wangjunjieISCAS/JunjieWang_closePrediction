@@ -1,0 +1,108 @@
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{epstopdf}
+\usepackage{soul}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{fancybox}
+%\usepackage{enumitem}
+\usepackage{graphicx}
+%\usepackage[font=small]{caption}
+%\usepackage{paralist}
+%\usepackage{framed}
+%\usepackage{multicols}
+\usepackage{color}
+\usepackage{colortbl}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{CJK}
+\usepackage{ulem}
+\usepackage{indentfirst}
+%\usepackage{amssymb}
+%\usepackage{cite}
+%\usepackage[numbers,sort&compress]{natbib}
+%\usepackage{amsmath}
+%\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage{caption}
+%\usetikzlibrary{pgfplots.statistics,calc}
+%\usepackage{ragged2e}
+%\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{tcolorbox}% http://ctan.org/pkg/tcolorbox
+%\definecolor{mycolor}{rgb}{0, 0., 0}% Rule colour
+\makeatletter
+\newcommand{\mybox}[1]{%
+  \setbox0=\hbox{#1}%
+  \setlength{\@tempdima}{\dimexpr\wd0+13pt}%
+  \begin{tcolorbox}[boxrule=0.5pt, colback=white, arc=4pt,
+	        left=6pt,right=6pt,top=6pt,bottom=6pt,boxsep=0pt]
+			    #1
+  \end{tcolorbox}
+}
+
+%\usepackage{titling}
+%\newcommand{\subtitle}[1]{%
+%  \posttitle{%
+%    \par\end{center}
+%    \begin{center}\large#1\end{center}
+%    \vskip0.5em}%
+%}
+
+\definecolor{mygray}{gray}{.9}
+
+%\usepackage{array}
+%\usepackage{amsmath}
+%\usepackage{centernot}
+%\usepackage{xspace}
+%\usepackage{url}
+%\usepackage{verbatim}
+%\usepackage{wrapfig}
+%\usepackage{tabularx}
+
+
+\newcommand{\todoc}[2]{{\textcolor{#1}{\textbf{#2}}}}
+% todo commands:
+\newcommand{\todored}[1]{\todoc{red}{\textbf{[[#1]]}}}
+\newcommand{\todogreen}[1]{\todoc{green}{\textbf{[[#1]]}}}
+\newcommand{\todoblue}[1]{\todoc{blue}{\textbf{[[#1]]}}}
+\newcommand{\todogray}[1]{\todoc{grey}{\textbf{[[#1]]}}}
+\newcommand{\todoorange}[1]{\todoc{orange}{\textbf{[[#1]]}}}
+\newcommand{\todobrown}[1]{\todoc{brown}{\textbf{[[#1]]}}}
+\newcommand{\todopurple}[1]{\todoc{purple}{\textbf{[[#1]]}}}
+
+
+\newcommand{\junjie}[1]{\todoblue{Junjie: #1}}
+\newcommand{\rev}[1]{\textcolor{Purple}{\textbf{#1}}}
+
+\definecolor{mycolorhigh}{RGB}{168, 157, 89}
+\definecolor{mycolormiddle}{RGB}{224, 224, 182}
+\definecolor{mycolorlow}{RGB}{245, 245, 237}
+
+
+\newcommand{\tool}{TSDetector}
+\newcommand{\task}{218}
+\newcommand{\company}{BigCompany}
+
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+% --- for revision
+% \newcommand{\rev}[1]{\textcolor{purple}{\st{#1}}}
+%\newcommand{\rev}[1]{#1}
+
+\newcommand{\add}[1]{\textcolor{blue}{\textbf{#1}}}
+%\newcommand{\add}[1]{{#1}}
+
+%% space in some tables.  BUT have it here, such that you can always renew it
+\newcommand{\ts}{$\;$}
+\newcommand{\tS}{$\;$}
+\newcommand{\tts}{\ \ \ \ \ }
+\newcommand{\tss}{\ \ \ $\;$}
+\newcommand{\ttts}{$\;$}
+\newcommand{\decentHLine}{\noalign{\hrule height 1.04pt}}
+
+%\usepackage{enumitem}
